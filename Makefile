@@ -19,3 +19,6 @@ install:
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/${NAME}
+
+refresh-screen:
+	${CC} ${CFLAGS} ${LDFLAGS} -o refresh-screen refresh-screen.c -lX11 -lXext -lXfixes
